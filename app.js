@@ -20,17 +20,17 @@ app.post("/rest/doLogin", function(req, res) {
 
     if(email == "abc@abc.com" && password == "123456")
         res.send({
-            success: false,
+            success: true,
             data: {
-                "error_code": 1000,
-                "message": "Invalid username or password"
+                session_id: "abcdefgh"
             }
         });
     else
         res.send({
-            success: true,
+            success: false,
             data: {
-                session_id: "abcdefgh"
+                "error_code": 1000,
+                "message": "Invalid username or password"
             }
         });
 });
