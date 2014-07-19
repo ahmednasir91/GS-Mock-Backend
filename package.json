@@ -1,0 +1,20 @@
+{
+    "name": "GS-mock-backend",
+    "version": "0.0.1",
+    "description": "This is a testing backend for GS App.",
+    "main": "app.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ahmednasir91.git"
+    },
+    "scripts": {
+        "start": "node app.js"
+    },
+    "engines": {
+        "node": "0.10.*"
+    },
+    "dependencies": {
+        "express": "latest",
+        "logfmt": "latest"
+    }
+}
