@@ -1,9 +1,10 @@
 var express = require('express'),
+    bodyParser = require('body-parser'),
     logfmt = require('logfmt');
 
 var app = express();
 
-app.use(express.bodyParser());
+app.use(bodyParser());
 
 
 app.use(logfmt.requestLogger());
