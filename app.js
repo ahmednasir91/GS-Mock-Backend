@@ -3,6 +3,9 @@ var express = require('express'),
 
 var app = express();
 
+app.use(express.bodyParser());
+
+
 app.use(logfmt.requestLogger());
 
 app.get("/", function (req, res){
@@ -10,12 +13,25 @@ app.get("/", function (req, res){
 });
 
 app.post("/rest/doLogin", function(req, res) {
-    res.send({
-        success: true,
-        data: {
-            session_id: "abcdefgh"
-        }
-    });
+
+    var email = req.body.email;
+    var password = req.body.password;
+
+    if(email == "abc@abc.com" && password == "123456")
+        res.send({
+            success: false,
+            data: {
+                "error_code": 1000,
+                "message": "Invalid username or password"
+            }
+        });
+    else
+        res.send({
+            success: true,
+            data: {
+                session_id: "abcdefgh"
+            }
+        });
 });
 
 var port = Number(process.env.PORT || 5000);
