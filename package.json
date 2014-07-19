@@ -5,7 +5,7 @@
     "main": "app.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/ahmednasir91.git"
+        "url": "https://github.com/ahmednasir91/GS-Mock-Backend.git"
     },
     "scripts": {
         "start": "node app.js"
