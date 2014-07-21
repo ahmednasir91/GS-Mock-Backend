@@ -44,7 +44,7 @@ app.get('/rest/synchData', function(req, res) {
           "success": true,
 
           "data": {
-             "current_time": "2014-07-14T19:43:37+0500",
+             "current_time": "2014-07-14 19:43:37 +0500",
              "locations": [
                  {
                    "id": 1,
