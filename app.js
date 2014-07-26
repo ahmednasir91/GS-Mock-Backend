@@ -48,8 +48,8 @@ app.get('/rest/synchData', function(req, res) {
              "locations": [
                  {
                    "id": 1,
-                   "name": "Name of Location",
-                   "wing": "Allowed Wing",
+                   "name": "North Campus A",
+                   "wing": "Juniors",
                    "grades": [
                        "V",
                        "VI"
@@ -57,8 +57,8 @@ app.get('/rest/synchData', function(req, res) {
                  },
                  {
                    "id": 2,
-                   "name": "Name of Location",
-                   "wing": "Allowed Wing",
+                   "name": "South Campus A",
+                   "wing": "Seniors",
                    "grades": [
                        "V",
                        "VI"
